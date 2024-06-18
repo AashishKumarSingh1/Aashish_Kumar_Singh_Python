@@ -2,6 +2,8 @@ string1=input("Enter the first string : ")
 string2=input('Enter the second string : ')
 print(string2)
 print(string1)
+string1=string1.lower()
+string2=string2.lower()
 print(sorted(string1))
 print(sorted(string2))
 
