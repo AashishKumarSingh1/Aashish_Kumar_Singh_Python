@@ -17,4 +17,4 @@ for i in range ( 1, number+1):
         print(f"The {i} is a Disarium Number!")
 
 else:
-    print("Done!")
+    print("Done")
