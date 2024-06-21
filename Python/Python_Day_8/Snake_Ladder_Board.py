@@ -6,4 +6,4 @@ for i in range(1,11):
     start+=10
 
 for row in square:
-    print(" ".join(map(str,row))))
+    print(" ".join(map(str,row)))
