@@ -19,8 +19,9 @@ Words are chosen from the list : {words}
 """)
 while min_guess>0:
     user_guess=input(f"Hlo ,{user_name} What will you Guess! ")
-    print(f"You have {min_guess} Guesses left!")
     min_guess-=1
+    print(f"You have {min_guess} Guesses left!")
+    
     if user_guess in random_word:
         print("You Got it!")
         guesses+=user_guess
@@ -36,7 +37,7 @@ while min_guess>0:
             print("_",end=" ")
             pass
     print()
-    if guesses in random_word:
+    if random_word in guesses:
         print("Hurray! You Win the Game!")
         break
     print()
