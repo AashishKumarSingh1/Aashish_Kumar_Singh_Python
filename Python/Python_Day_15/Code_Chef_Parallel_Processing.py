@@ -42,3 +42,5 @@ for _ in range(int(input())):
         c += i 
         res = min(res, max(c, s-c))
     print(res)
+
+list=['']
