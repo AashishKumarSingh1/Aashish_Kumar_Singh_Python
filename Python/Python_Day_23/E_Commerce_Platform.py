@@ -66,32 +66,34 @@ class Order:
             order_details += f"{item['product'].name} (Quantity: {item['quantity']})\n"
         order_details += f"Total Price: ${self.total_price:.2f}"
         return order_details
+    
+if __name__=='__main__':
         
-# Create some products
-product1 = Product(1, "Laptop", 1000, 50)
-product2 = Product(2, "Smartphone", 500, 100)
+        # Create some products
+        product1 = Product(1, "Laptop", 1000, 50)
+        product2 = Product(2, "Smartphone", 500, 100)
 
-# Create a customer
-customer = Customer(1, "Alice", "alice@example.com")
+        # Create a customer
+        customer = Customer(1, "Alice", "alice@example.com")
 
-# Create an order for the customer
-order = Order(customer)
+        # Create an order for the customer
+        order = Order(customer)
 
-# Add products to the order
-order.add_product(product1, 2)
-order.add_product(product2, 5)
+        # Add products to the order
+        order.add_product(product1, 2)
+        order.add_product(product2, 5)
 
-# Print order details
-print(order)
+        # Print order details
+        print(order)
 
-# Remove a product from the order
-order.remove_product(product2, 2)
+        # Remove a product from the order
+        order.remove_product(product2, 2)
 
-# Print order details after removal
-print(order)
+        # Print order details after removal
+        print(order)
 
-# Process payment
-order.process_payment()
+        # Process payment
+        order.process_payment()
 
-# Print order details after processing payment
-print(order)
+        # Print order details after processing payment
+        print(order)
